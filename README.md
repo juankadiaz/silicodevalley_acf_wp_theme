@@ -5,7 +5,7 @@ Theme para el curso de ACF en SilicodeValley - https://silicodevalley.com/curso/
 
 Contributors: juankadiaz<br>
 Requires at least: 5.0<br>
-Tested WordPress core up to: 5.5<br>
+Tested WordPress core up to: 5.7<br>
 Stable tag: 1.0.4<br>
 Requires PHP: 7.0<br>
 License: GPLv2 or later<br>
@@ -21,7 +21,7 @@ Theme para el curso de ACF en SilicodeValley - https://silicodevalley.com/curso/
 
 # Changelog
 
-= 1.0.4 (22 Febrero, 2021) =
+= 1.0.4 (22 Marzo, 2021) =
 * **NEW**. Compilado y reestructuración para salida oficial del curso.
 
 = 1.0.2 (14 Febrero, 2021) =
