@@ -1,0 +1,110 @@
+/*_______ Latest posts Block _______*/
+.wp-block-latest-posts{
+	list-style: none;
+	margin-bottom: 0;
+	li{
+		font-weight: 800;
+		font-size: 2rem;
+		line-height: 120%;
+		border-left: .25rem solid $color__secondary;
+		padding-left: 1rem;
+		margin-bottom: 2rem;
+		a{
+			color: $color__primary;
+			// text-decoration: underline;
+		}
+		.wp-block-latest-posts__post-date{
+			font-weight: 400;
+		}
+	}
+	&.is-grid{
+		li{
+			flex: 1 1 100%;
+			width: 100%;
+			border: none;
+			padding: 0;
+			margin: 0 auto;
+			margin-bottom: 2rem;
+			overflow: hidden;
+			@media(min-width: 480px){
+				flex: 0 0 48%;
+				max-width: 48%;
+				margin: 0 1% 1rem;
+			}
+			@media(min-width: 769px){
+				flex: 0 0 31.333%;
+				max-width: 31.333%;
+				margin-bottom: 0;
+			}
+			&:focus,
+			&:focus-within,
+			&:hover{
+				background-color: $color__tertiary;
+			}
+		}
+		.wp-block-latest-posts__featured-image{
+			max-height: 12rem;
+			margin-bottom: .5rem !important;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		a,
+		.wp-block-latest-posts__post-date,
+		.wp-block-latest-posts__post-excerpt{
+			padding: 0 1rem;
+		}
+		a{
+			display: block;
+			font-size: 2rem;
+			line-height: 100%;
+			text-decoration: none;
+			color: $color__primary;
+			margin-bottom: .5rem;
+			&:focus,
+			&:hover{
+				text-decoration: underline;
+				outline: 0;
+			}
+		}
+		.wp-block-latest-posts__post-date{
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 100%;
+			color: $color__secondary;
+			margin-bottom: .5rem;
+		}
+		.wp-block-latest-posts__post-excerpt{
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 120%;
+			padding-bottom: 1rem;
+			margin: 0;
+			// .more-link{
+			// 	display: none !important;
+			// }
+			a{
+				display: table;
+				font-size: 1rem;
+				font-weight: 700;
+				text-decoration: none;
+				padding: 0 0 .125rem;
+				border-bottom: .125rem solid $color__secondary;
+				margin: 1rem 0 1rem auto;
+				@extend %transition;
+				&:after{
+					content: " ";
+					font-family: 'dashicons';
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: .25rem;
+				}
+				&:hover{
+					color: $color__secondary;
+				}
+			}
+		}
+	}
+}

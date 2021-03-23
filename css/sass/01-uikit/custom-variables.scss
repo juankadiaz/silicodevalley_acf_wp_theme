@@ -1,0 +1,407 @@
+
+/*  Customizing UIKit variables for LFCantabria theme  */
+
+// Breakpoints
+// ========================================================================
+
+// Phone Portrait:   Galaxy (360x640), iPhone 6 (375x667), iPhone 6+ (414x736)
+// Phone Landscape:  Galaxy (640x360), iPhone 6 (667x375), iPhone 6+ (736x414)
+// Tablet Portrait:  iPad (768x1024), Galaxy Tab (800x1280),
+// Tablet Landscape: iPad (1024x768), iPad Pro (1024x1366),
+// Desktop:          Galaxy Tab (1280x800), iPad Pro (1366x1024)
+
+$breakpoint-small:								640px;  // Phone landscape
+$breakpoint-medium:								960px;  // Tablet Landscape
+$breakpoint-large:								1200px; // Desktop
+$breakpoint-xlarge:								1600px; // Large Screens
+
+$breakpoint-xsmall-max:							($breakpoint-small - 1);
+$breakpoint-small-max:							($breakpoint-medium - 1);
+$breakpoint-medium-max:							($breakpoint-large - 1);
+$breakpoint-large-max:							($breakpoint-xlarge - 1);
+
+
+// Global variables
+// ========================================================================
+
+/* _________ Typography _________ */
+$global-font-family:							$font__main;
+$global-font-size:								16px;
+$global-line-height:							1.5;
+
+$global-2xlarge-font-size:						2.625rem; // 42px
+$global-xlarge-font-size:						2rem;     // 32px
+$global-large-font-size:						1.5rem;   // 24px
+$global-medium-font-size:						1.25rem;  // 20px
+$global-small-font-size:						0.875rem; // 14px
+
+/* _________ Text _________ */
+$text-meta-font-size:							1rem;
+$text-meta-line-height:							100%;
+$text-meta-color:								$color__grey_morelight;
+
+$text-muted-color:								$color__grey_light;
+
+/* _________ Base _________ */
+$base-heading-font-weight:						700;
+$base-heading-color:							$color__primary;
+$base-heading-text-transform:					none;
+$base-heading-margin-top:						0;
+
+$base-h3-font-size:								1.5rem;
+$base-h3-line-height:							100%;
+
+$base-h4-font-size:								1.25rem;
+$base-h4-line-height:							100%;
+
+
+$base-h5-line-height:							100%;
+
+$base-h6-line-height:							100%;
+
+$base-strong-font-weight:						700;
+$base-code-font-size:							1.25rem;
+$base-code-font-family:							$global-font-family;
+$base-code-color:								$color__primary;
+$base-em-color:									inherit;
+
+$base-selection-background:						$color__tertiary;
+$base-selection-color:							white;
+
+/* _________ Colors _________ */
+$global-color:									$color__primary;
+$global-emphasis-color:							$color__secondary;
+$global-muted-color:							$color__grey_minimus;
+
+$global-link-color:								$color__secondary;
+$global-link-hover-color:						$color__tertiary;
+
+$global-inverse-color:							white;
+
+
+$inverse-global-color-mode:                     white;
+
+$inverse-global-color:                          white;
+$inverse-global-emphasis-color:                 $color__secondary;
+$inverse-global-muted-color:                    $color__grey_minimus;
+$inverse-global-inverse-color:                  $global-color;
+
+$inverse-global-primary-background:             $global-inverse-color;
+$inverse-global-muted-background:               white;
+
+$inverse-global-border:                         white;
+
+/* _________ Section _________ */
+$section-padding-vertical:						2rem;
+$section-padding-vertical-m:					2rem;
+
+/* _________ Backgrounds _________ */
+$global-background:								white;
+
+$global-muted-background:						$color__grey_minimus;
+$global-primary-background:						$color__primary;
+$global-secondary-background:				    $color__secondary;
+
+$global-success-background:						$color__primary;
+$global-warning-background:						$color__tertiary;
+$global-danger-background:						$color__secondary;
+
+
+/* _________ Borders _________ */
+$global-border-width:							.125rem;
+$global-border:									$color__secondary;
+
+
+/* _________ Box-Shadows _________ */
+$global-small-box-shadow:						0 0 .25rem rgba(47,47,47,0.15);
+$global-medium-box-shadow:						0 0 .5rem rgba(47,47,47,0.15);
+$global-large-box-shadow:						0 0 1rem rgba(47,47,47,0.15);
+$global-xlarge-box-shadow:						0 0 2rem rgba(47,47,47,0.15);
+
+
+/* _________ Margin (Used in margin, section, list) _________ */
+$global-margin:									1.5rem;
+$global-small-margin:							.5rem;
+$global-medium-margin:							1rem;
+$global-large-margin:							4rem;
+$global-xlarge-margin:							8rem;
+
+
+/* _________ Gutter (Used in grid, column, container, align, card, padding) _________ */
+$global-small-gutter:							.5rem;
+$global-gutter:									1rem;
+$global-medium-gutter:							1.5rem;
+$global-large-gutter:							2rem;
+
+$padding-large-padding:							$global-large-gutter;
+
+
+/* _________ Height _________ */
+$global-control-height:							2rem;
+$global-control-small-height:					1.5rem;
+$global-control-large-height:					2.5rem;
+
+
+/* _________ Position _________ */
+$position-small-margin:							$global-small-gutter;
+$position-medium-margin:						$global-gutter;
+$position-large-margin:							$global-large-gutter;
+$position-large-margin-l:						4rem;
+
+
+/* _________ Z index _________ */
+$global-z-index:								100;
+
+/* _________ Section _________ */
+$section-padding-vertical:						2rem;
+$section-padding-vertical-m:					1.5rem;
+
+
+/* _________ Container _________ */
+$container-padding-horizontal:					2rem;
+$container-padding-horizontal-s:				1rem;
+$container-padding-horizontal-m:				1.5rem;
+
+
+/* _________ Buttons _________ */
+$button-font-size:								1.125rem;
+$button-small-font-size:						.875rem;
+$button-large-font-size:						1.25rem;
+
+$button-line-height:							3rem;
+$button-small-line-height:						1.5rem;
+$button-large-line-height:						4rem;
+
+$button-padding-horizontal:						1.5rem;
+$button-small-padding-horizontal:				.5rem;
+$button-large-padding-horizontal:				2rem;
+
+/* _________ Button default _________ */
+$button-default-background:						$color__primary;
+$button-default-color:							white;
+$button-default-hover-background:				$color__secondary;
+$button-default-hover-color:					white;
+$button-default-active-background:				$color__secondary;
+$button-default-active-color:					white;
+
+$inverse-button-default-background:				white;
+$inverse-button-default-color:					$color__primary;
+$inverse-button-default-hover-background:		$color__secondary;
+$inverse-button-default-hover-color:			white;
+$inverse-button-default-active-background:		$color__secondary;
+$inverse-button-default-active-color:			white;
+
+/* _________ Button primary _________ */
+$button-primary-background:						$color__primary;
+$button-primary-color:							white;
+$button-primary-hover-background:				$color__secondary;
+$button-primary-hover-color:					white;
+$button-primary-active-background:				$color__secondary;
+$button-primary-active-color:					white;
+
+$inverse-button-primary-background:				white;
+$inverse-button-primary-color:					$color__primary;
+$inverse-button-primary-hover-background:		$color__secondary;
+$inverse-button-primary-hover-color:			white;
+$inverse-button-primary-active-background:		$color__secondary;
+$inverse-button-primary-active-color:			white;
+
+
+/* _________ Button secondary _________ */
+$button-secondary-background:					$color__secondary;
+$button-secondary-color:						white;
+$button-secondary-hover-background:				$color__primary;
+$button-secondary-hover-color:					white;
+$button-secondary-active-background:			$color__grey_light;
+$button-secondary-active-color:					white;
+
+$inverse-button-secondary-background:			white;
+$inverse-button-secondary-color:				$color__secondary;
+$inverse-button-secondary-hover-background:		$color__secondary;
+$inverse-button-secondary-hover-color:			white;
+$inverse-button-secondary-active-background:	$color__secondary;
+$inverse-button-secondary-active-color:			white;
+
+
+/* _________ Button muted _________ */
+$button-disabled-background:					$color__grey_light;
+$button-disabled-color:							$color__grey;
+
+
+/* _________ Button text _________ */
+$button-text-line-height:						100%;
+$button-text-color:								$color__secondary;
+$button-text-hover-color:						white;
+$button-text-disabled-color:					$color__grey_morelight;
+
+/* _________ Button link _________ */
+$button-link-line-height:						100%;
+$button-link-color:								$color__secondary;
+$button-link-hover-color:						$color__primary;
+$button-link-hover-text-decoration:				none;
+$button-link-disabled-color:					$color__grey_light;
+
+/* _________ Nav _________ */
+$nav-item-padding-vertical:                     0;
+$nav-item-padding-horizontal:                   0;
+
+$nav-divider-margin-vertical:                   0;
+$nav-divider-margin-horizontal:                 1rem;
+
+$nav-primary-item-font-size:					1.5rem;
+$nav-primary-item-line-height:					100%;
+$nav-primary-item-color:						white;
+$nav-primary-item-hover-color:					$color__grey_light;
+$nav-primary-item-active-color:					$color__grey_morelight;
+$nav-primary-header-color:						$color__secondary;
+$nav-primary-divider-border-width:				.125rem;
+
+$nav-primary-sublist-item-color:				white;
+$nav-primary-sublist-item-hover-color:			$color__secondary;
+$nav-primary-sublist-item-active-color:			$color__grey;
+
+$nav-default-item-color:						$color__primary;
+$nav-default-item-hover-color:					$color__secondary;
+$nav-default-item-active-color:					$color__grey_light;
+$nav-default-header-color:						$color__primary;
+
+/* _________ Navbar _________ */
+$navbar-background:								white;
+$navbar-color-mode:								none;
+
+$navbar-nav-item-height:						auto;
+$navbar-nav-item-padding-horizontal:			0;
+
+$nav-primary-item-font-size:					1.5rem;
+$nav-primary-item-line-height:					100%;
+$nav-primary-item-color:						white;
+
+$nav-header-padding-vertical:					0;
+$nav-header-padding-horizontal:					0;
+$nav-header-font-size:							1.125rem;
+$nav-header-text-transform:						none;
+$nav-header-margin-top:							0;
+
+$navbar-item-color:								$color__primary;
+
+$navbar-toggle-color:							$color__primary;
+$navbar-toggle-hover-color:						$color__secondary;
+
+/* _________ Offcanvas _________ */
+$offcanvas-bar-width:							80vw;
+$offcanvas-bar-padding-vertical:				2rem;
+$offcanvas-bar-padding-horizontal:				2rem;
+$offcanvas-bar-background:						$color__primary;
+
+$offcanvas-bar-width-m:							40vw;
+$offcanvas-bar-padding-vertical-m:				10vh;
+$offcanvas-bar-padding-horizontal-m:			4rem;
+
+$offcanvas-close-position:						1.5rem;
+$offcanvas-close-padding:						0;
+
+/* _________ Close _________ */
+$close-color:									white;
+$close-hover-color:								$color__secondary;
+
+/* _________ Divider _________ */
+$nav-primary-divider-border-width:				.05rem;
+$nav-primary-divider-border:					$color__grey_morelight;
+
+
+/* _________ Icon _________ */
+$icon-button-size:								2rem;
+$icon-button-border-radius:						5rem;
+$icon-button-background:						transparent;
+$icon-button-color:								$color__primary;
+
+$icon-button-hover-background:					transparent;
+$icon-button-hover-color:						$color__secondary;
+
+$icon-button-active-background:					$color__grey_light;
+$icon-button-active-color:						white;
+
+
+/* _________ Grid _________ */
+$grid-small-gutter-horizontal:					.5rem;
+$grid-small-gutter-vertical:					.25rem;
+
+$grid-divider-border-width:						1px;
+$grid-divider-border:							$color__grey_verylight;
+
+
+/* _________ Text _________ */
+$text-small-line-height:						140%;
+$text-large-line-height:						120%;
+
+
+/* _________ Forms _________ */
+$form-height:									2.5rem;
+$form-line-height:								100%;
+$form-padding-horizontal:						.75em;
+$form-padding-vertical:							.5em;
+
+$form-background:								white;
+$form-color:									$color__primary;
+
+$form-focus-background:							$color__tertiary;
+$form-focus-color:								$color__secondary;
+
+$form-placeholder-color:						$color__primary;
+
+$form-small-height:								2rem;
+$form-small-padding-horizontal:					.75rem;
+$form-small-line-height:						100%;
+$form-small-font-size:							.875rem;
+
+$form-large-height:								auto;
+$form-large-padding-horizontal:					.75em;
+$form-large-line-height:						120%;
+$form-large-font-size:							1.25rem;
+
+$form-radio-size:								1rem;
+$form-radio-margin-top:							0;
+$form-radio-background:							white;
+
+$form-radio-checked-background:					$color__secondary;
+$form-radio-checked-icon-color:					white;
+
+$form-radio-checked-focus-background:			$color__primary;
+
+
+/* _________ Modal _________ */
+$modal-title-font-size:							1.5rem;
+$modal-title-line-height:						100%;
+$modal-dialog-background:						$color__grey_verylight;
+
+
+/* _________ Breadcrumb _________ */
+$breadcrumb-item-font-size:						.875rem;
+$breadcrumb-item-color:							$color__grey;
+$breadcrumb-item-hover-color:					$color__grey;
+$breadcrumb-item-hover-text-decoration:			underline;
+$breadcrumb-item-active-color:					$color__grey;
+
+$breadcrumb-divider:							"›";
+$breadcrumb-divider-margin-horizontal:			.25rem;
+$breadcrumb-divider-font-size:					.875rem;
+$breadcrumb-divider-color:						$color__grey_light;
+
+/* _________ Slidenav _________ */
+$slidenav-padding-vertical:						1rem !default;
+$slidenav-padding-horizontal:					1rem !default;
+
+$slidenav-color:								white;
+$slidenav-hover-color:							$color__primary;
+$slidenav-active-color:							$color__grey_verylight;
+
+$slidenav-large-padding-vertical:				1.5rem;
+$slidenav-large-padding-horizontal:				1.5rem;
+
+/* _________ Card _________ */
+$card-title-font-size:							2rem;
+$card-title-line-height:						100%;
+
+$card-default-background:						white;
+$card-default-color:							$color__grey;
+$card-default-title-color:						$color__primary;

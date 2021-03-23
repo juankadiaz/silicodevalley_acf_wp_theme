@@ -1,0 +1,28 @@
+/*_______ Separator Block _______*/
+.wp-block-separator{
+	max-width: $size__content-minimun !important;
+	background-color: $color__secondary;
+	margin: 4rem auto 2rem !important;
+	&.is-style-wide {
+		max-width: $size__content-max !important;
+		background-color: $color__tertiary;
+		margin: 4rem auto;
+	}
+	&.is-style-dots{
+		max-width: $size__content-tiny !important;
+		margin: 2rem auto;
+		&:before{
+			content: '...';
+			font-weight: 800;
+			font-size: 4rem;
+			line-height: 80%;
+			letter-spacing: .5em;
+			text-align: center;
+			color: $color__secondary;
+			padding-left: .5em;
+		}
+		& + %headings{
+			margin-top: 0 !important;
+		}
+	}
+}

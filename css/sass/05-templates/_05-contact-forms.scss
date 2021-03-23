@@ -1,0 +1,162 @@
+/*_______ Contact forms _______*/
+/*_______ Gravity forms _______*/
+.gform_wrapper{
+	margin-top: 0 !important;
+	margin-bottom: 2rem;
+	ul{
+		list-style-type: none;
+		padding: 0;
+		&.gfield_radio{
+			width: 100% !important;
+		}
+		.top_label li,
+		li {
+			width: 100% !important;
+			margin-left: 0!important;
+			list-style-type: none!important;
+			list-style-image: none!important;
+			list-style: none!important;
+			overflow: visible;
+			padding: 0 !important;
+			&.gfield{
+				margin-top: 0 !important;
+				margin-bottom: 1rem !important;
+				&.gsection{
+					margin: 0 0 1rem !important;
+					border: none !important;
+					.gsection_title{
+						font-weight: 400 !important;
+						font-size: 1.25rem !important;
+					}
+				}
+				&.gf_left_half{
+					width: 100% !important;
+					display: inline-block !important;
+					clear: both !important;
+					margin-right: 4% !important;
+					@media (min-width: $breakpoint-small) {
+						width: 48% !important;
+					}
+				}
+				&.gf_right_half{
+					width: 100% !important;
+					display: inline-block !important;
+					clear: both !important;
+					@media (min-width: $breakpoint-small) {
+						width: 48% !important;
+					}
+				}
+				&.hidden_label{
+					input{
+						margin-top: 0 !important;
+					}
+				}
+				.ginput_left{
+					margin-bottom: 1rem !important;
+					@media (min-width: $breakpoint-small) {
+						margin-bottom: 0 !important;
+					}
+				}
+			}
+		}
+	}
+	label{
+		font-size: 1.125rem !important;
+		@media (min-width: $breakpoint-small){
+			font-size: 1.25rem !important;
+		}
+	}
+	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+	select,
+	textarea{
+		height: 2.625rem;
+		font-size: 1rem !important;
+		line-height: 100% !important;
+		padding: .5rem !important;
+		@media (min-width: $breakpoint-small) {
+			font-size: 1.125rem !important;
+			padding: .75rem !important;
+		}
+		option{
+			padding: 0 !important;
+		}
+	}
+	.ginput_container{
+		margin-top: 0 !important;
+	}
+	.ginput_container_select{
+		position: relative;
+		select{
+			background-image: none;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 35%;
+			bottom: 35%;
+			display: block;
+			right: 1rem;
+			width: .5rem;
+			height: .5rem;
+			border-right: .125rem solid $color__secondary;
+			border-bottom: .125rem solid $color__secondary;
+			transform: rotate(45deg);
+		}
+	}
+	.ginput_complex{
+		margin-bottom: 0 !important;
+		select{
+			margin-bottom: 0 !important;
+		}
+		span{
+			display: block;
+			margin-bottom: 1rem !important;
+			input{
+				margin-bottom: 0 !important;
+			}
+			&:nth-last-of-type(2),
+			&:last-of-type{
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	.ginput_container_consent{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		input{
+			margin-top: 0 !important;
+			margin-right: .5rem !important;
+		}
+		label{
+			display: block !important;
+			font-weight: 400 !important;
+			font-size: 1rem !important;
+			letter-spacing: 0 !important;
+			line-height: 100% !important;
+			margin: 0 !important;
+		}
+	}
+	.gfield_consent_description{
+		max-height: 8rem !important;
+		font-size: .75rem !important;
+		line-height: 120% !important;
+		padding: .5rem !important;
+		background-color: white;
+		border: none;
+		margin-top: .5rem !important;
+	}
+	
+	.gform_footer{
+		margin-top: 2rem !important;
+		margin-bottom: 0 !important;
+		padding: 0 !important;
+	}
+}
+.gf_placeholder{
+	color: $color__grey_light;
+}
+.gfield_required{
+	display: none;
+}

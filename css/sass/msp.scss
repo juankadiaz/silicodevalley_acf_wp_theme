@@ -1,0 +1,75 @@
+@charset "utf-8";
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "00-variables/01-mixins";
+@import "00-variables/02-colors";
+@import "00-variables/03-fonts";
+@import "00-variables/04-structure";
+
+/*--------------------------------------------------------------
+# Puto UIKit
+--------------------------------------------------------------*/
+// 1. Your custom variables and variable overwrites.
+@import "01-uikit/custom-variables.scss";
+
+// 2. Import default variables and available mixins.
+@import "01-uikit/variables-theme.scss";
+@import "01-uikit/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+@import "01-uikit/custom-mixins.scss";
+
+// 4. Import UIkit.
+@import "01-uikit/uikit-theme.scss";
+
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "02-base/01-accessibility";
+@import "02-base/02-elements";
+@import "02-base/03-alignments";
+@import "02-base/04-typography";
+@import "02-base/05-forms";
+@import "02-base/06-buttons";
+@import "02-base/07-media";
+@import "02-base/08-posts-and-pages";
+@import "02-base/09-comments";
+@import "02-base/10-infinite-scroll";
+@import "02-base/11-admin-bar";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "03-components/01-header";
+@import "03-components/02-main-navigation";
+@import "03-components/03-posts-navigation";
+@import "03-components/04-footer";
+@import "03-components/05-widgets";
+@import "03-components/07-cookies-advise";
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import "04-blocks/01-group";
+@import "04-blocks/02-image";
+@import "04-blocks/03-lists";
+@import "04-blocks/04-table";
+@import "04-blocks/05-colums";
+@import "04-blocks/06-media-text";
+@import "04-blocks/06-cover";
+@import "04-blocks/07-quotes";
+@import "04-blocks/08-separators";
+@import "04-blocks/09-latest-posts";
+@import "04-blocks/10-custom-blocks";
+
+/*--------------------------------------------------------------
+# Templates
+--------------------------------------------------------------*/
+@import "05-templates/00-general-layout";
+@import "05-templates/01-home";
+@import "05-templates/02-blog-feed";
+@import "05-templates/03-single";
+@import "05-templates/04-page";
+@import "05-templates/05-contact-forms";

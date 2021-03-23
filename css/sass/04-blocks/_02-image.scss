@@ -1,0 +1,14 @@
+/*_______ Image block _______*/
+.wp-block-image {
+	margin-bottom: 2rem;
+	img{
+		display: block;
+	}
+	figcaption{
+		display: block;
+		@include font-size(1);
+		text-align: center;
+		color: $color__grey_morelight;
+		margin: .5rem 0 0;
+	}
+}

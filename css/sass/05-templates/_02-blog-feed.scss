@@ -1,0 +1,132 @@
+/*_______ Blog feed _______*/
+.blog,
+.archive,
+.search-results{
+	.site-main{
+		@extend %inner;
+		@extend %inner-padding;
+		display: flex;
+		flex-flow: row wrap;
+		margin-top: 8rem;
+		.page-header{
+			flex: 1 1 100%;
+			width: 100%;
+			padding: 4rem 2rem;
+			background-color: white;
+			margin-bottom: 4rem;
+			.page-title{
+				text-align: center;
+				margin: 0;
+			}
+		}
+	}
+	.hentry{
+		position:relative;
+		@media(min-width: 480px){
+			flex: 0 0 48%;
+			max-width: 48%;
+			margin: 0 1% 4rem;
+		}
+		@media(min-width: 769px){
+			flex: 0 0 31.333%;
+			max-width: 31.333%;
+			margin: 0 1% 4rem;
+		}
+		&:focus,
+		&:focus-within,
+		&:hover{
+			background-color: $color__tertiary;
+		}
+		@extend %transition;
+		.entry-header{
+			padding: 0;
+			background-color: transparent;
+			.entry-image{
+				max-height: 10rem;
+				margin-bottom: 1rem;
+				overflow: hidden;
+				img{
+					display:block;
+					@extend %transition;
+				}
+			}
+			.entry-title,
+			.entry-meta{
+				padding: 0 1rem;
+			}
+			.entry-title{
+				display:block;
+				font-size: 2rem;
+				font-weight: 700;
+				line-height: 100%;
+				text-align: left;
+				margin-top: 0;
+				margin-bottom: .5rem;
+				a{
+					color: $color__primary;
+				}
+				&:hover{
+					a{
+						text-decoration: underline;
+					}
+				}
+			}
+			.entry-meta{
+				font-weight: 400;
+				font-size: 1rem;
+				line-height: 100%;
+				color: $color__secondary;
+				margin-bottom: .5rem;
+				.byline{
+					display: none;
+				}
+				a {
+					color: inherit;
+				}
+			}
+		}
+		.entry-content{
+			margin-top: 0;
+			margin-bottom: 0;
+			padding: 0 1rem;
+		}
+		%headings, p{
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 120%;
+			margin-bottom: .5rem;
+		}
+		.more-link{
+			display: table;
+			font-size: 1rem;
+			font-weight: 700;
+			text-decoration: none;
+			padding-bottom: .125rem;
+			border-bottom: .125rem solid $color__secondary;
+			margin: 1rem 0 1rem auto;
+			@extend %transition;
+			&:hover{
+				color: $color__secondary;
+			}
+		}
+		.entry-footer{
+			display:none;
+		}
+		&:hover{
+			.entry-image{
+				img{
+					filter: grayscale(0);
+				}
+			}
+		}
+	}
+}
+
+.archive,
+.search-results{
+	.hentry{
+		max-width: $size__content-moretiny !important;
+		padding: 0 2rem;
+		margin: 0 auto 4rem !important;
+	}
+}

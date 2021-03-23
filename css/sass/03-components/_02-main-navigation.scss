@@ -1,0 +1,44 @@
+/*_______ Main navigation _______*/
+.msp-main-nav{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	padding-top: 3rem;
+	padding-right: 3.25rem;
+}
+
+.msp-main-menu{
+	scrollbar-color: $color__grey_morelight transparent;
+	scrollbar-width: thin;
+	@extend %transition;
+	/* Works on Chrome/Edge/Safari */
+	&::-webkit-scrollbar{
+		width: .25rem;
+		padding-right: .25rem;
+	}
+	&::-webkit-scrollbar-thumb{
+		background-color: $color__grey_morelight;
+		&:hover{
+			background-color: $color__secondary;
+		}
+	}
+	&::-webkit-scrollbar-track{
+		background-color: transparent;
+	}
+	.uk-parent{
+		margin-bottom: 1.5rem;
+		@media (min-width: $breakpoint-small){
+			margin-bottom: 4vh;
+		}
+		> a{
+			font-weight: 700;
+			color: $color__secondary;
+			margin-bottom: .5rem;
+		}
+		.uk-nav-sub{
+			li:not(:last-child){
+				margin-bottom: .75rem;
+			}
+		}
+	}
+}

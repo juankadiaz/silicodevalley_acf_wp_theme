@@ -1,0 +1,116 @@
+/* _________ Custom UIKit mixins _________ */
+%headings{
+	*[class^="uk-text-"]{
+		display: block;
+		line-height: 100%;
+	}
+}
+
+.uk-light{
+	%headings,
+	p{
+		color: white;
+	}
+	// .uk-button-secondary{
+	// 	color: $color__primary;
+	// 	background-color: white;
+	// }
+}
+// .uk-cover{
+// 	object-fit: cover;
+// 	height: 100vh !important;
+// }
+
+
+/* _________ Buttons _________ */
+@mixin hook-button(){
+	font-weight: 700;
+	text-transform: uppercase;
+}
+@mixin hook-button-default(){
+	border: none;
+}
+@mixin hook-inverse-button-default(){
+	padding: 4rem;
+	background-color:white;
+}
+@mixin hook-button-primary(){
+	border: none;
+}
+
+@mixin hook-button-large(){
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 100%;
+	padding: 1rem 1.5rem;
+}
+
+@mixin hook-inverse-button-secondary(){
+	padding: 1rem 1.5rem;
+	background-color: white;
+}
+
+@mixin hook-button-link(){
+	border: 0;
+	border-bottom: .125rem solid;
+	>svg{
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+}
+@mixin hook-button-text(){
+	border: 0;
+}
+
+@mixin hook-icon-button(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 !important;
+	> svg{
+		display: block;
+		margin: auto;
+		height: 100%;
+	}
+}
+
+
+/* _________ Forms _________ */
+@mixin hook-form(){
+	border: .0625rem solid $color__primary !important;
+}
+
+@mixin hook-form-radio(){
+	border: .0625rem solid $color__primary !important;
+}
+
+@mixin hook-form-label(){
+	height: auto;
+	line-height: 100%;
+}
+
+
+/* _________ Nav _________ */
+@mixin hook-nav-header(){
+	font-weight: 700;
+}
+
+/* _________ Modal _________ */
+@mixin hook-modal-header(){
+	border: none;
+	margin-bottom: 1.5rem;
+}
+@mixin hook-modal-footer(){
+	border: none;
+}
+
+
+/* _________ Offcanvas _________ */
+@mixin hook-offcanvas-close(){
+	width: 1.5rem;
+	height: 1.5rem;
+	>svg{
+		width: 100%;
+		height: 100%;
+	}
+}

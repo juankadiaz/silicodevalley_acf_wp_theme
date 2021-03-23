@@ -1,0 +1,17 @@
+/*_______ Page template _______*/
+.page-template-default,
+.page-template{
+	.entry-header{
+		padding: 7rem 2rem;
+		margin-bottom: 4rem;
+		background-color: $color__tertiary;
+		.entry-title,
+		.page-title{
+			text-align: center;
+			margin: 0;
+		}
+		.entry-image{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,116 @@
+/*_______ Blockquotes Blocks _______*/
+.wp-block-quote{
+	position: relative;
+	margin-bottom: 2rem;
+	p{
+		font-style: normal;
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 120%;
+		color: $color__grey;
+		padding-right: 5%;
+		padding-left: 1rem;
+		border-left: .25rem solid $color__secondary;
+	}
+	cite{
+		display: block;
+		font-style: normal;
+		line-height: 120%;
+		text-align: left;
+		color: $color__grey_light;
+		margin-top: 1rem;
+		a{
+			color: $color__secondary;
+		}
+	}
+	&.is-style-large{
+		border: none;
+		margin-bottom: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		p{
+			position: relative;
+			font-weight: 600;
+			font-style: normal;
+			font-size: 1.75rem;
+			line-height: 100%;
+			color: $color__primary;
+			padding: 0 10% 0 1.75rem;
+			margin-bottom: 1rem;
+			border: none;
+			@media (min-width: $breakpoint-small){
+				font-size: 2rem;
+				padding: 0 10% 0 2.5rem;
+			}
+			&:before{
+				content: '“';
+				position: absolute;
+				top: 0;
+				left: -.25rem;
+				font-weight: 700;
+				font-size: 4.25rem;
+				font-style: normal;
+				line-height: 70%;
+				color: $color__secondary;
+				@media (min-width: $breakpoint-small){
+					font-size: 4.875rem;
+				}
+			}
+		}
+		cite{
+			text-align: right;
+		}
+	}
+}
+
+/*_______ Pullquotes Blocks _______*/
+.wp-block-pullquote{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border-top: .25rem solid $color__secondary;
+	border-bottom: .25rem solid $color__secondary;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	p{
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.75rem;
+		line-height: 120%;
+		color: $color__primary;
+		margin-bottom: 1rem;
+		@media (min-width: $breakpoint-medium){
+			font-size: 2.25rem;
+		}
+	}
+	cite{
+		display: block;
+		font-size: 1rem;
+		font-style: normal;
+		line-height: 100%;
+		color: $color__grey_light;
+		margin-top: 1rem;
+		a{
+			color: $color__primary;
+		}
+
+	}
+	&.alignright{
+		max-width: 500px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	&.alignleft{
+		max-width: 500px;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	&.is-style-solid-color{
+		background-color: $color__tertiary;
+	}
+
+}
+
+/*_______ Verse Block _______*/
+.wp-block-verse{
+	font-size: 1.25rem;
+}

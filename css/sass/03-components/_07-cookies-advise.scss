@@ -1,0 +1,43 @@
+/*_______ Cookies advise widget _______*/
+#moove_gdpr_cookie_info_bar{
+	right: 1rem !important;
+	bottom: 1rem !important;
+	left: 1rem !important;
+	width: auto !important;
+	max-width: 30rem !important;
+	padding: 1rem !important;
+	border-top: 0 !important;
+	border: .25rem solid $color__primary !important;
+	@media (min-width: $breakpoint-small){
+		left: auto !important;
+		padding: 1rem 2rem !important;
+	}
+	&.moove-gdpr-info-bar-hidden{
+		bottom: -100% !important;
+	}
+	.moove-gdpr-info-bar-container{
+		padding: 0 !important;
+		.moove-gdpr-info-bar-content{
+			padding: 0 !important;
+			.moove-gdpr-cookie-notice{
+				p{
+					font-weight: 400 !important;
+					margin-bottom: .5rem !important;
+					a,
+					.change-settings-button{
+						color: $color__secondary !important;
+					}
+				}
+			}
+			.moove-gdpr-button-holder{
+				padding: 0 !important;
+				margin-left: 2rem !important;
+				.mgbutton{
+					display: block !important;
+					margin: 0 auto !important;
+					background-color: $color__secondary !important;
+				}
+			}
+		}
+	}
+}
